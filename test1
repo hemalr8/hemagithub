@@ -1,0 +1,18 @@
+def reverseNumber(num):
+    sign = -1 if num < 0 else 1
+    reversed_num = int(str(abs(num))[::-1]) * sign
+    return reversed_num
+
+def addNum(num1,num2):
+    # Add the  numbers
+    result = num1 + num2
+    return result
+# Example numbers
+num1 = 4567
+num2 = 8765
+
+# Call the function and print the result
+result = addNum(reverseNumber(num1),reverseNumber(num2))
+# Reverse the result
+final_output = reverseNumber(result)
+print("The sum of the reversed numbers is:", final_output)
